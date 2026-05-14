@@ -32,7 +32,8 @@
                     text-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-sm';
     @endphp
 
-    {{-- 1. Éditeur --}}
+    {{--
+    ===== 1. ÉDITEUR DU SITE (masqué temporairement) =====
     <section data-animate="fade-up" class="mb-12 pb-10 border-b border-primary-container/30">
         <h2 class="{{ $section }}">1. Éditeur du site</h2>
         <div class="{{ $body }}">
@@ -95,8 +96,10 @@
             </table>
         </div>
     </section>
+    --}}
 
-    {{-- 2. Directeur de la publication --}}
+    {{--
+    ===== 2. DIRECTEUR DE LA PUBLICATION (masqué temporairement) =====
     <section data-animate="fade-up" class="mb-12 pb-10 border-b border-primary-container/30">
         <h2 class="{{ $section }}">2. Directeur de la publication</h2>
         <div class="{{ $body }}">
@@ -105,8 +108,10 @@
             </p>
         </div>
     </section>
+    --}}
 
-    {{-- 3. Hébergeur --}}
+    {{--
+    ===== 3. HÉBERGEMENT (masqué temporairement) =====
     <section data-animate="fade-up" class="mb-12 pb-10 border-b border-primary-container/30">
         <h2 class="{{ $section }}">3. Hébergement</h2>
         <div class="{{ $body }}">
@@ -135,10 +140,11 @@
             </table>
         </div>
     </section>
+    --}}
 
-    {{-- 4. Propriété intellectuelle --}}
+    {{-- 1. Propriété intellectuelle --}}
     <section data-animate="fade-up" class="mb-12 pb-10 border-b border-primary-container/30">
-        <h2 class="{{ $section }}">4. Propriété intellectuelle</h2>
+        <h2 class="{{ $section }}">1. Propriété intellectuelle</h2>
         <div class="{{ $body }}">
             <p>
                 L'ensemble des éléments constituant ce site (textes, visuels, logo, architecture,
@@ -152,9 +158,9 @@
         </div>
     </section>
 
-    {{-- 5. Limitation de responsabilité --}}
+    {{-- 2. Limitation de responsabilité --}}
     <section data-animate="fade-up" class="mb-12 pb-10 border-b border-primary-container/30">
-        <h2 class="{{ $section }}">5. Limitation de responsabilité</h2>
+        <h2 class="{{ $section }}">2. Limitation de responsabilité</h2>
         <div class="{{ $body }}">
             <p>
                 {{ $company['name'] }} s'efforce de maintenir les informations publiées sur ce site
@@ -173,9 +179,9 @@
         </div>
     </section>
 
-    {{-- 6. Droit applicable --}}
+    {{-- 3. Droit applicable --}}
     <section data-animate="fade-up" class="mb-12 pb-10 border-b border-primary-container/30">
-        <h2 class="{{ $section }}">6. Droit applicable</h2>
+        <h2 class="{{ $section }}">3. Droit applicable</h2>
         <div class="{{ $body }}">
             <p>
                 Le présent site et ses mentions légales sont soumis au droit de la
@@ -186,8 +192,8 @@
     </section>
 
     {{-- Lien politique confidentialité --}}
-    <div class="mt-12" data-animate="fade-up"
-         class="bg-surface-container border border-primary-container p-6 flex items-start gap-4">
+    <div class="mt-12 bg-surface-container border border-primary-container p-6 flex items-start gap-4"
+         data-animate="fade-up">
         <span class="material-symbols-outlined text-secondary-container shrink-0"
               style="font-variation-settings:'FILL' 1;">privacy_tip</span>
         <div>
