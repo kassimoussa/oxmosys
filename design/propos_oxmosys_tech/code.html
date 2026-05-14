@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>À propos - OXMOSYS-TECH</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#004e5f",
+                        "primary-container": "#1b3a8a",
+                        "error-container": "#93000a",
+                        "primary-fixed-dim": "#b5c4ff",
+                        "surface-container-lowest": "#090e1c",
+                        "on-primary-fixed-variant": "#244191",
+                        "on-error": "#690005",
+                        "surface-container-low": "#161b2b",
+                        "inverse-on-surface": "#2b3040",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed": "#b4ebff",
+                        "surface-container": "#1a1f2f",
+                        "surface-container-high": "#25293a",
+                        "inverse-primary": "#3f5aab",
+                        "on-primary": "#00297a",
+                        "on-secondary-fixed": "#311300",
+                        "surface-dim": "#0e1322",
+                        "surface-container-highest": "#2f3445",
+                        "on-primary-container": "#8ea8ff",
+                        "on-tertiary-container": "#00bbe1",
+                        "on-tertiary": "#003642",
+                        "secondary-container": "#e1721a",
+                        "outline-variant": "#444651",
+                        "surface": "#0e1322",
+                        "on-error-container": "#ffdad6",
+                        "outline": "#8e909d",
+                        "secondary": "#ffb689",
+                        "tertiary": "#3cd7ff",
+                        "on-secondary": "#512300",
+                        "tertiary-container": "#004656",
+                        "secondary-fixed": "#ffdbc8",
+                        "on-secondary-container": "#471e00",
+                        "on-surface": "#dee1f7",
+                        "on-primary-fixed": "#00174d",
+                        "on-secondary-fixed-variant": "#743500",
+                        "primary-fixed": "#dbe1ff",
+                        "background": "#0e1322",
+                        "tertiary-fixed-dim": "#3cd7ff",
+                        "primary": "#b5c4ff",
+                        "secondary-fixed-dim": "#ffb689",
+                        "surface-tint": "#b5c4ff",
+                        "inverse-surface": "#dee1f7",
+                        "on-tertiary-fixed": "#001f27",
+                        "on-background": "#dee1f7",
+                        "on-surface-variant": "#c4c6d3",
+                        "surface-variant": "#2f3445",
+                        "surface-bright": "#343949"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "80px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-xl-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "label-sm": ["JetBrains Mono"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-sm": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .circuit-bg {
+            background-image: linear-gradient(rgba(27, 58, 138, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(27, 58, 138, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .tech-border {
+            border: 1px solid #1B3A8A;
+        }
+        .tech-card {
+            border: 1px solid #1B3A8A;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .tech-card:hover {
+            border-color: #E87820;
+            box-shadow: inset 0 0 10px rgba(232, 120, 32, 0.1);
+        }
+        .tech-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 8px;
+            height: 8px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+        .tech-card:hover::before {
+            background-color: #E87820;
+        }
+        .btn-primary {
+            background-color: #E87820;
+            color: #ffffff;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased circuit-bg min-h-screen pt-20">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface text-secondary dark:text-secondary font-body-md text-body-md fixed top-0 w-full z-50 border-b border-primary-container transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-on-surface">OXMOSYS-TECH</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Accueil</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Partenaires</a>
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1" href="#">À propos</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact</a>
+</div>
+<button class="hidden md:block btn-primary px-6 py-2 font-body-md hover:bg-opacity-90 transition-all">
+                Demander un devis
+            </button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative border-b border-primary-container bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-20">
+<img alt="Background" class="w-full h-full object-cover" data-alt="A highly complex and abstract digital circuit board pattern representing cutting-edge technology and data flow. The image features deep navy and cyan hues, glowing nodes, and precise geometric lines that convey a sophisticated, high-tech dark mode aesthetic. The mood is powerful and meticulously structured, reflecting an advanced IT infrastructure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbNQvH20buNz4PDvr9WRPw6w1G723et1qvJDAClQLvDD7UOZPYXsltfyuprucgdseldNtcEzIRnCXyvQP1hPgvRQbAfY78FQKzdSdSmVXMnNPS2PVw6OUDu-90w4YtEJNbxFGS2cYRg_Zbg1Vb7qMw-EcdDsaT_zUkvJ5N2nqPisfKMvWORQBYRex0Bm9NPprP2CJ-8g_ubBKenN31qsp9y-cjclEpHDqjDH2hLgFCsn_DpF1nMvC4F9rtrqa9kdY-gqOriaimkldL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 relative z-10 flex flex-col items-start">
+<span class="font-label-sm text-label-sm text-tertiary mb-4 tracking-widest uppercase border border-tertiary/30 px-3 py-1 rounded bg-surface/50">L'entreprise</span>
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface mb-6 max-w-3xl">
+                L'ingénierie numérique au service de votre excellence.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                OXMOSYS-TECH est le partenaire technologique de référence. Nous concevons, déployons et sécurisons des infrastructures IT robustes pour propulser votre entreprise dans l'ère numérique avec une précision implacable.
+            </p>
+</div>
+</header>
+<!-- Mission & Story Section (2 Column) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 space-y-6">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8 border-l-4 border-secondary pl-4">Notre Mission</h2>
+<div class="space-y-4 text-on-surface-variant font-body-lg text-body-lg">
+<p>Fondée sur la conviction que la technologie doit être un levier de croissance fiable, OXMOSYS-TECH s'engage à fournir des solutions d'ingénierie informatique de pointe. Notre approche est méthodique, ancrée dans la rigueur industrielle et l'innovation constante.</p>
+<p>Nous ne nous contentons pas de résoudre des problèmes ; nous architecturons des écosystèmes numériques résilients capables de soutenir vos ambitions les plus audacieuses.</p>
+</div>
+</div>
+<div class="md:col-span-6 relative h-[400px] tech-card bg-surface-container">
+<img alt="Mission Abstract" class="w-full h-full object-cover opacity-60" data-alt="A stylized, abstract representation of data streams and fiber optic networks glowing in a dark environment. The visual emphasizes deep navy and vibrant cyan tones, illustrating rapid data transmission and technological precision. The composition is highly geometric and modern, perfectly aligning with a sophisticated dark-tech corporate identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm4L81hjHHisyVzlz-si82RTRf5UzWG6D0KqNv3UBt4kOgAfA23GKVgZNgovi6PAe3VPaa1yvICKsV84QCZapH19KcHME2O3Dgd9SUj4ENoxyGzHxiUSO2Ufy44E_ftHlnDOIQCJMwvzvL5n6oUDvO00b7kUrzhnA3TC0n1KwA6faOPAjfEmxKBamMWAWOza2VKOG85djj36-xWGDxYkfmQt7KmCua6lQlaHgNcRqit70y90B2gR4bvxqRbxGGulOsZr446ogsgLQX"/>
+</div>
+</div>
+</section>
+<!-- Values Grid (Bento Style) -->
+<section class="bg-surface-container-lowest border-y border-primary-container py-20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface inline-block border-b-2 border-secondary pb-2">Nos Valeurs Fondamentales</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Value 1 -->
+<div class="tech-card bg-surface p-6 h-full flex flex-col">
+<div class="text-tertiary mb-4">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">lightbulb</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Innovation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                        Anticiper les ruptures technologiques pour concevoir les standards de demain.
+                    </p>
+</div>
+<!-- Value 2 -->
+<div class="tech-card bg-surface p-6 h-full flex flex-col md:translate-y-8">
+<div class="text-tertiary mb-4">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">verified</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Fiabilité</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                        Des architectures robustes garantissant une continuité d'activité absolue.
+                    </p>
+</div>
+<!-- Value 3 -->
+<div class="tech-card bg-surface p-6 h-full flex flex-col">
+<div class="text-tertiary mb-4">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">handshake</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Proximité</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                        Un partenariat stratégique étroit pour comprendre et servir vos enjeux uniques.
+                    </p>
+</div>
+<!-- Value 4 -->
+<div class="tech-card bg-surface p-6 h-full flex flex-col md:translate-y-8">
+<div class="text-tertiary mb-4">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">military_tech</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Excellence</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                        Une exécution sans faille, guidée par les plus hauts standards de l'ingénierie.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-12 border-l-4 border-secondary pl-4">L'Équipe Dirigeante</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Team Member 1 -->
+<div class="tech-card bg-surface-container flex flex-col">
+<div class="h-64 border-b border-primary-container bg-surface overflow-hidden relative">
+<div class="absolute inset-0 bg-primary-container/20 mix-blend-overlay z-10"></div>
+<img alt="Directeur Général" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A professional portrait of a senior male executive in a corporate setting. The lighting is dramatic and moody, utilizing high contrast with deep shadows and sharp highlights to convey authority and expertise. The background is a sleek, dark-toned modern office space, aligning with a premium, tech-focused brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcIVXlY9FPNBJZrtqxclgHp62TY-quVnlONG1Tpl-GJkjiFrqP9RHnYuNKsm7RTKMn-_Vzj3y3GVEkJ7uQXXKcxDk48u3Dn032ClWzVymUWi95n5DN2rahRdIcZPRXIzNDIMmOlTFXF8DS1pYWS86WnA-r2nyS-RO44wX8TE_zRUaKFarMXS0d1REy-jqYiRQ_ugHaY0uiaP_4YoB0VVOchPG2A2JzTTE3IcfYdIlxrYn-RKwmgQXhNF5IoRwnYjUpbo1gxc1dTSuB"/>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Jean Dupont</h3>
+<p class="font-label-sm text-label-sm text-tertiary mb-4">DIRECTEUR GÉNÉRAL</p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Expert en architecture système avec plus de 15 ans d'expérience dans la transformation numérique des grandes entreprises.
+                    </p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="tech-card bg-surface-container flex flex-col">
+<div class="h-64 border-b border-primary-container bg-surface overflow-hidden relative">
+<div class="absolute inset-0 bg-primary-container/20 mix-blend-overlay z-10"></div>
+<img alt="CTO" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A professional portrait of a female Chief Technology Officer in a high-tech environment. The lighting is sharp and cinematic, casting deep shadows while highlighting her confident expression. The backdrop features subtle, out-of-focus digital screens in dark navy and cool cyan, reinforcing the dark-tech, industrial corporate theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcC84_ZTF4yaDof1BaHvC7R24IsBJ5RcBGA9bJZWWOxUss5wYVBel5-5dhggvUgGLSKQevsbnvKI7jQAZOpkiuEd8GR2mm4tWXccLNwTrfjh4pzhhdndxaIP47GAXMNA8G1t5HgN69tUn3CV1sKcuOqFq7hrAPLXGsGbSfBY6aylbBA7Urke68cH9P1jaSqDde0b1zQg5ltXzPu9xs6kOp53vZJCNYDZWBsgoOP3RenDYG9K3eU0V6-BqT2UdwDKKK1NkZTh--tdt9"/>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Marie Claire</h3>
+<p class="font-label-sm text-label-sm text-tertiary mb-4">CHIEF TECHNOLOGY OFFICER</p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Pionnière dans le déploiement d'infrastructures cloud hybrides et la cybersécurité avancée.
+                    </p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="tech-card bg-surface-container flex flex-col">
+<div class="h-64 border-b border-primary-container bg-surface overflow-hidden relative">
+<div class="absolute inset-0 bg-primary-container/20 mix-blend-overlay z-10"></div>
+<img alt="Lead Engineer" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A professional portrait of a male lead engineer with a focused, analytical demeanor. Shot in a minimalist, dark-themed studio setting. The lighting emphasizes structure and texture, featuring high contrast and subtle cool tones that align perfectly with an advanced, precise engineering brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvEii5PXKMyR0uHYoOH5lkA7CDSFz1rpybXQOLKxqLng8u0Kd5aEznXkSbzbCuBiKVqiVAAmgc4JhqtwTp93ojfiW3PFqnaUECiRrh_iKTDBeshKF8zBe0800KAgMTsoy2dzKwzn--m52b5pigU3t45THsZbFRuHatDnZ5kDoIZ05IIEc_VhubNO53aiOS5Anc3a8nellIaePa3GlluCt6pATPzkGrjw8OzpVG13Wtdon9Er4f60V3CwGrnkDZ3O_DHFYEUbVV-994"/>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Ahmed Hassan</h3>
+<p class="font-label-sm text-label-sm text-tertiary mb-4">LEAD INFRASTRUCTURE</p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Spécialiste de l'optimisation des réseaux à très haut débit et de la résilience des data centers.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full py-12 border-t border-primary-container">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-base px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-extrabold text-on-surface mb-4 md:mb-0">
+                OXMOSYS-TECH
+            </div>
+<div class="flex flex-col space-y-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Accueil</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Partenaires</a>
+</div>
+<div class="flex flex-col space-y-2">
+<a class="font-body-md text-body-md text-secondary" href="#">À propos</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Mentions Légales</a>
+</div>
+<div class="col-span-1 md:col-span-3 mt-8 pt-8 border-t border-primary-container text-on-surface-variant font-body-md text-body-md text-center md:text-left">
+                © 2024 OXMOSYS-TECH. Tous droits réservés.
+            </div>
+</div>
+</footer>
+</body></html>
