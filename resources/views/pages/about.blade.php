@@ -118,7 +118,8 @@
     </div>
 </section>
 
-{{-- ===== ÉQUIPE ===== --}}
+{{--
+===== ÉQUIPE DIRIGEANTE (masquée temporairement) =====
 <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24">
     <h2 data-animate="fade-up"
         class="font-headline-lg text-headline-lg font-bold text-on-surface mb-12 border-l-4 border-secondary pl-4">
@@ -128,7 +129,6 @@
         @foreach($team as $i => $member)
             <div data-animate="fade-up" data-delay="{{ $i * 150 }}"
                  class="card-lift tech-card bg-surface-container flex flex-col">
-                {{-- Avatar --}}
                 <div class="h-64 border-b border-primary-container bg-surface-container-low
                             relative overflow-hidden flex items-center justify-center circuit-bg">
                     <div class="relative z-10 w-24 h-24 bg-primary-container flex items-center justify-center
@@ -138,7 +138,6 @@
                             {{ $member['initials'] }}
                         </span>
                     </div>
-                    {{-- Scan line animation --}}
                     <div class="absolute inset-0 pointer-events-none overflow-hidden opacity-20">
                         <div class="w-full h-0.5 bg-tertiary"
                              style="animation: scanLine 3s linear infinite {{ $i * 1 }}s;"></div>
@@ -159,6 +158,7 @@
         @endforeach
     </div>
 </section>
+--}}
 
 {{-- ===== CTA ===== --}}
 <section data-animate="fade-up"
